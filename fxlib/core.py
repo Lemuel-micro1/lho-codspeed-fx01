@@ -20,11 +20,11 @@ def build_index(rows):
 
 
 def dedupe(ids):
-    seen = set()
+    seen = []
     out = []
     for x in ids:
         if x not in seen:
-            seen.add(x)
+            seen.append(x)
             out.append(x)
     return out
 
